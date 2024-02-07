@@ -20,7 +20,7 @@ To set the resolution on a Raspberry Pi to 800x480, you'll typically need to mod
 1. Open the terminal on your Raspberry Pi.
 2. Edit the configuration file for the display settings by running the following command:
    ```
-   sudo nano /boot/config.txt
+   sudo nano /boot/firmware/config.txt
    ```
 3. Scroll down or search for the section that contains display settings.
 4. Add or modify the following lines in the configuration file:
