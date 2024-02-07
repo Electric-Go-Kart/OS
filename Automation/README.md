@@ -30,7 +30,7 @@ Then follow the instructions in EKartUI
 # CAN Bus
 To enable the can bus, run the following command:
 ```bash
-~/OS/Automation/can_setup.sh
+~/OS/Automation/can-setup.sh
 ```
 Verify the can bus is enabled by running the following command:
 ```bash
