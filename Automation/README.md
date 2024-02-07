@@ -32,6 +32,10 @@ To enable the can bus, run the following command:
 ```bash
 ~/OS/Automation/can-setup.sh
 ```
+Set up the can bus by running the following command:
+```bash
+sudo ip link set can0 up type can bitrate 500000
+```
 Verify the can bus is enabled by running the following command:
 ```bash
 ifconfig can0
@@ -40,3 +44,4 @@ OR
 ```bash
 ip -details -statistics link show can0
 ```
+Documentation: https://forums.raspberrypi.com/viewtopic.php?t=141052
