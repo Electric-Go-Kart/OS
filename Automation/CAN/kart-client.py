@@ -102,10 +102,11 @@ while True:
 
     # Wait for a status message
     if CAN_INTERFACE[0:4] == "vcan":
-        time.sleep(1)
+        time.sleep(0.1)
     else:
         message = bus.recv(1)
         if message is not None:
             print("Received message: ", message)
         else:
             print("No message received")
+        
