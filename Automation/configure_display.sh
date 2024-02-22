@@ -2,10 +2,21 @@
 
 # Define the lines to add
 lines_to_add=(
+    "# For 800x480 display over hdmi"
     "hdmi_group=2"
     "hdmi_mode=87"
     "hdmi_cvt 800 480 60 6 0 0 0"
 )
+
+
+# Check if user is on gokart
+if [[ "$(hostname)" != "gokart" ]]; then
+    lines_to_add+=(
+        "# For 180 degree rotation (upside down)"
+        "display_lcd_rotate=2"
+        "dtoverlay=rpi-ft5406,touchscreen-inverted-x=1,touchscreen-inverted-y=1"
+    )
+fi
 
 # Path to the configuration file
 config_file="/boot/firmware/config.txt"
