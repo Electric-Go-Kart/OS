@@ -5,7 +5,7 @@
 ### 2. Download a Raspberry Pi compatible Image:
 - [Raspberry Pi OS](https://www.raspberrypi.org/software/operating-systems/)
 - [Ubuntu](https://ubuntu.com/download/raspberry-pi)
-- [A pre-configured OS (such as the one for the OAK-D)](https://docs.luxonis.com/projects/hardware/en/latest/pages/guides/raspberrypi/)
+- [A pre-configured OS (such as the one for the OAK-D)](https://docs.luxonis.com/projects/hardware/en/latest/pages/guides/raspberrypi/) - This is the only confirmed OS that works with the OAK-D, and that works with the OSBuildInstructions.md file.
 - The EKART OS periodically backed up on the Hard Drive
 
 ### 3. Flash the Image to the microSD Card
