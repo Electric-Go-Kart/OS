@@ -12,7 +12,7 @@ git clone https://github.com/Electric-Go-Kart/OS.git
 ```
 ## 2. Setup simulation environment (skip if not using simulation)
 ```bash
-~/OS/Automation/vcan-setup.sh
+~/OS/Automation/CAN/vcan-setup.sh
 ```
 ### 2.1 Change the resolution mirrored to the RPi offical 7" touchscreen
 To set the resolution on a Raspberry Pi to 800x480, you'll typically need to modify the configuration file for the display settings. Here's how you can do it (or you can use the `~/OS/Automation/configure_display.sh` script):
