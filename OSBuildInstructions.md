@@ -40,19 +40,35 @@ After rebooting, your Raspberry Pi should display at a resolution of 800x480 pix
 
 Now you are ready to develop in a virtual environment in python.
 
-<span style="color:red">This is needed to avoid apt package conflicts</span>
+> This is needed to avoid apt package conflicts
 
 Do so by running the following command:
 ```bash
 source ~/gokart-env/bin/activate
 ```
-To exit the virtual environment, run the following command:
+To exit the virtual environment, run the following command (but don't do that for development):
 ```bash
 deactivate
 ```
 
-## 3. User Interface Setup
-### 3.1 Clone the repository and any further repositories in the ~/projects directory
+## 3. APDde setup
+### 3.1 Install the required packages (ensure you're in the virtual environment)
+```bash
+python ~/depthai-python/examples/install_requirements.py
+```
+Clone the repository:
+```bash
+cd ~/projects
+git clone https://github.com/Electric-Go-Kart/APDde.git
+```
+
+### 3.2 Run the APDde with the OAK-D Pro connected
+```bash
+~/projects/APDde/APDde.py
+```
+
+## 4. User Interface Setup
+### 4.1 Clone the repository and any further repositories in the ~/projects directory
 
 This is where the EKart software lives:
 ```bash
@@ -63,35 +79,34 @@ So in that directory:
 ```bash
 git clone https://github.com/Electric-Go-Kart/EKartUI.git
 ```
-### 3.2 
+### 4.2 
 ```bash
 cd ~/projects/EKartUI
+git checkout spencer
 ```
-### 3.3 Install the required packages
+
+### 4.3 Install the required packages
 ```bash
 pip install -r requirements.txt
 ```
-### 3.4 Run the UI
+### 4.4 Run the UI
 ```bash
 ./start_ui.sh
 ```
-<span style="color:red">If you are not in simulation, you will need to run the steps in section 5 to setup the CAN interface</span>
+> If you are not in simulation, you will need to run the steps in section 5 to setup the CAN interface
 
-## 4. GPS Setup (Not verified yet)
-### 4.1 Clone
+## 5. GPS Setup (Not verified yet)
+### 5.1 Clone
 ```bash
 git clone https://github.com/Electric-Go-Kart/GPS
 ```
-### 4.2 Install the required packages
+### 5.2 Install the required packages
 ```bash
 sudo apt install gpsd gpsd-clients -y
 ```
-### 4.3 Run the GPS (verify installation)
+### 5.3 Run the GPS (verify installation)
 ```bash
 cgps -s
 ```
 
-## 5. CAN Setup TODO
-### 5.1 
-
-**ALSO ADD DEPTHAI STEPS***
+### 6. CAN Setup is under the ~/OS/Automation/CAN directory
