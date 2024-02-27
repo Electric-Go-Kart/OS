@@ -53,6 +53,13 @@ deactivate
 
 ## 3. User Interface Setup
 ### 3.1 Clone the repository and any further repositories in the ~/projects directory
+
+This is where the EKart software lives:
+```bash
+cd ~/projects
+```
+
+So in that directory:
 ```bash
 git clone https://github.com/Electric-Go-Kart/EKartUI.git
 ```
@@ -84,5 +91,7 @@ sudo apt install gpsd gpsd-clients -y
 cgps -s
 ```
 
-## 5. CAN Setup
+## 5. CAN Setup TODO
 ### 5.1 
+
+**ALSO ADD DEPTHAI STEPS***
