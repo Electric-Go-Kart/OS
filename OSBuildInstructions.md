@@ -83,6 +83,7 @@ git clone https://github.com/Electric-Go-Kart/EKartUI.git
 ```bash
 cd ~/projects/EKartUI
 git checkout spencer
+sudo apt install libxcb-cursor0
 ```
 
 ### 4.3 Install the required packages
