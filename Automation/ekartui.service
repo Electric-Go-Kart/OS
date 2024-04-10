@@ -1,0 +1,12 @@
+[Unit]
+Description=EKartUI Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/gokart/projects/EKartUI/start_ui.sh
+WorkingDirectory=/home/gokart/projects/EKartUI
+Environment="PATH=/home/gokart/gokart-env/bin"
+
+[Install]
+WantedBy=multi-user.target
